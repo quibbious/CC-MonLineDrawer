@@ -4,7 +4,7 @@ printError("No monitor found. Please connect a monitor.") -- determine if we can
 end
 
 function monitorTouchDraw(xPos, yPos, xPos2, yPos2) -- make a function for easier use
-monitor.setTextScale(0.5)
+    
 while true do
 
 event, side, xPos, yPos = os.pullEvent("monitor_touch") -- waits for "monitor_touch" event and defines xPos and yPos values
