@@ -1,6 +1,6 @@
 # Installation and Usage
 ### run pastebin command inside of computer, and make sure a monitor is connected. 
-on a 5x5 monitor display, the line is fairly small. However, on smaller monitors, you may need to adjust the monitor.setTextScale value in MonLineDrawer.lua.
+on a 5x5 monitor display, the line is fairly small. However, on smaller monitors, you may need to make a monitor.setTextScale value in MonLineDrawer.lua.
 ```
 pastebin get vXKndURv MonLineDrawer.lua
 ```
