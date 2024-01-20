@@ -14,10 +14,11 @@ event, side, xPos2, yPos2 = os.pullEvent("monitor_touch") -- waits for another "
 end
 
 term.redirect(monitor) -- switches to monitor for output
-monitor.write(paintutils.drawLine(xPos, yPos, xPos2, yPos2, 0x1)) -- uses monitor.write and paintutils to draw a line from x1,y1, to x2,y2 from the values given from the "monitor_touch" events
+paintutils.drawLine(xPos, yPos, xPos2, yPos2, 0x1) -- uses and paint-utils to draw a line from x1,y1, to x2,y2 from the values given from the "monitor_touch" events
+    -- using monitor.write() returns nil, since already in scope when using term.redirect()
 
 end
 while true do
 monitorTouchDraw() -- running the function
-term.native() -- switches back to computer for output
+term.native() -- switches back to the computer for output
 end
