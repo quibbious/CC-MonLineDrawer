@@ -3,7 +3,7 @@ if not monitor then
 printError("No monitor found. Please connect a monitor.") -- determine if we can even run this 
 end
 
-function monitorTouchDraw(xPos, yPos, xPos2, yPos2) -- make a function for easier use
+function monitorLineDraw(xPos, yPos, xPos2, yPos2) -- make a function for easier use
     
 while true do
 
@@ -19,6 +19,6 @@ paintutils.drawLine(xPos, yPos, xPos2, yPos2, 0x1) -- uses and paint-utils to dr
 
 end
 while true do
-monitorTouchDraw() -- running the function
+monitorLineDraw() -- running the function
 term.native() -- switches back to the computer for output
 end
